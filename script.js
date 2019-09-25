@@ -25,7 +25,7 @@ if (tempFahr < 54) {
 }
 
 //final output
-var response = "Since it is " + tempFahr + "degrees and you are going to a " eventType ", you should wear " result1 + result2";
-
-
-console.log (response); 
+if ( eventType && tempFahr) {
+	var final = "Since it is "+ tempFahr +" degrees and you are going to a "+ eventType +" event, you should wear "+ result1 +" and "+ result2 +".";
+	console.log(final);
+}
