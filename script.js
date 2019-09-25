@@ -4,28 +4,26 @@ var tempFahr = prompt("What is the weather?");
 
 //determing the type of event
 if (eventType === 'casual') {
-	result1 = "something comfy";
+    result1 = "something comfy";
   }
     else if (eventType === 'semi-formal') {
-	result1 = "a polo";
+    result1 = "a polo";
 }
    else if (eventType === 'formal') {
-	result1 = "a suit";
+    result1 = "a suit";
 }
 
 //determining the weather
 if (tempFahr < 54) { 
-	result2 = "a coat";
+    result2 = "a coat";
   }
     else if (54 <= tempFahr <= 70) {
-	result2 = "a jacket";
+    result2 = "a jacket";
 }
    else if (tempFahr > 70) {
-	result2 = "no jacket";
+    result2 = "no jacket";
 }
 
 //final output
-if ( eventType && tempFahr) {
-	var final = "Since it is "+ tempFahr +" degrees and you are going to a "+ eventType +" event, you should wear "+ result1 +" and "+ result2 +".";
-	console.log(final);
-}
+  var final = "Since it is "+ tempFahr +" degrees and you are going to a "+ eventType +" event, you should wear "+ result1 +" and "+ result2 +".";
+    console.log(final);
